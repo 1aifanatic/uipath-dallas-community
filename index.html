@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dallas UiPath Community Day | Build Path Presentation</title>
+    <meta
+      name="description"
+      content="Click-through HTML presentation for Dallas UiPath Community Day: Stop Guessing, Choose the Right UiPath Build Path."
+    >
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="deck" aria-live="polite">
+      <section class="slide cover is-active" data-title="Cover">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="cover-media" aria-hidden="true">
+          <img src="assets/event-banner.jpg" alt="">
+        </div>
+        <div class="cover-panel">
+          <p class="eyebrow">Dallas UiPath Community Day</p>
+          <h1>Stop Guessing.<br>Choose the Right UiPath Build Path.</h1>
+          <p class="lede">A practical decision framework for Studio, Agent Builder, Coded Agents, and Maestro.</p>
+          <div class="event-strip">
+            <span>Thursday, July 16, 2026</span>
+            <span>3:00-5:00 PM CDT</span>
+            <span>JSOM1.117, Richardson, TX</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Event">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block">
+          <p class="eyebrow orange">In-person community day</p>
+          <h2>Dallas UiPath Community Day</h2>
+          <p>Event details and host information from the official UiPath Community page.</p>
+        </div>
+        <div class="event-layout">
+          <img class="event-photo" src="assets/event-square.jpg" alt="UiPath community event attendees">
+          <div class="info-stack">
+            <article class="info-card">
+              <span>When</span>
+              <strong>Thursday, July 16, 2026<br>3:00-5:00 PM CDT</strong>
+            </article>
+            <article class="info-card">
+              <span>Where</span>
+              <strong>Naveen Jindal School of Management</strong>
+              <p>800 West Campbell Road, JSOM1.117, Richardson, TX 75080</p>
+            </article>
+            <article class="info-card dark-card">
+              <span>Session promise</span>
+              <p>A simple framework to choose between UiPath build paths, backed by short production-style demos.</p>
+            </article>
+          </div>
+        </div>
+        <div class="hosts-row">
+          <article class="host">
+            <img src="assets/naveen-chatlapalli.jpg" alt="Naveen Chatlapalli">
+            <div>
+              <strong>Naveen Chatlapalli</strong>
+              <span>Sr. Manager, Solution Architecture and UiPath MVP</span>
+            </div>
+          </article>
+          <article class="host">
+            <img src="assets/karthik-kapula.jpg" alt="Karthik Kapula">
+            <div>
+              <strong>Karthik Kapula</strong>
+              <span>UiPath Solution Architect, Lead Developer, UiPath MVP 2X</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Run of Show">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <p class="eyebrow orange">Two-hour session</p>
+          <h2>Run of Show</h2>
+          <p>A practical flow built from the published session window and topic.</p>
+        </div>
+        <div class="agenda">
+          <article><b>00</b><strong>Welcome and context</strong><span>Connect Dallas builders, frame the problem, align on expectations.</span></article>
+          <article><b>10</b><strong>Why build path matters</strong><span>Cost, speed, governance, maintainability, and production risk.</span></article>
+          <article><b>25</b><strong>Decision framework</strong><span>Use the outcome, risk, actors, tools, and lifecycle to choose.</span></article>
+          <article><b>45</b><strong>Build path deep dives</strong><span>Studio, Agent Builder, Coded Agents, and Maestro in plain terms.</span></article>
+          <article><b>70</b><strong>Short live demos</strong><span>Studio robot, Agent Builder triage, Maestro with coded logic.</span></article>
+          <article><b>100</b><strong>Build-path clinic and Q&amp;A</strong><span>Apply the framework to attendee scenarios.</span></article>
+        </div>
+      </section>
+
+      <section class="slide dark collage" data-title="Core Idea">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block">
+          <p class="pill">Core idea</p>
+          <h2>Use the lightest build path that can survive production.</h2>
+          <p>Great UiPath architecture is not about choosing the newest option. It is about matching the work, team, risk, and operating model.</p>
+        </div>
+        <div class="signal-grid">
+          <article><span>Work shape</span><strong>Is it deterministic, judgment-heavy, or multi-actor?</strong></article>
+          <article><span>Builder profile</span><strong>Who owns it after the demo: citizen, automation team, or engineers?</strong></article>
+          <article><span>Control needs</span><strong>What audit, testing, approval, and policy gates are required?</strong></article>
+          <article><span>Operating model</span><strong>Who monitors, changes, and improves it after launch?</strong></article>
+        </div>
+      </section>
+
+      <section class="slide teal" data-title="Decision Flow">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>The Build Path Decision Flow</h2>
+          <p>Start from the work. Let the tool choice fall out of the constraints.</p>
+        </div>
+        <svg class="diagram decision-diagram" viewBox="0 0 1180 430" role="img" aria-label="Decision flow from work definition to Studio, Agent Builder, Coded Agents, and Maestro">
+          <defs>
+            <marker id="arrow-white" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            </marker>
+          </defs>
+          <g class="links">
+            <path d="M205 105 H300"></path>
+            <path d="M520 105 H670"></path>
+            <path d="M420 150 V210"></path>
+            <path d="M520 245 H670"></path>
+            <path d="M420 290 V350"></path>
+            <path d="M520 385 H670"></path>
+            <path d="M880 105 H1000 V245 H980"></path>
+            <path d="M880 245 H980"></path>
+            <path d="M880 385 H1000 V245 H980"></path>
+          </g>
+          <g class="nodes">
+            <rect class="node dark-node" x="35" y="65" width="170" height="80"></rect>
+            <text x="120" y="98"><tspan>Define outcome</tspan><tspan x="120" dy="20">and risk</tspan></text>
+            <rect class="node orange-node" x="300" y="55" width="220" height="100"></rect>
+            <text x="410" y="92"><tspan>Mostly deterministic</tspan><tspan x="410" dy="22">UI or API work?</tspan></text>
+            <rect class="node blue-node" x="300" y="205" width="220" height="85"></rect>
+            <text x="410" y="239"><tspan>Needs reasoning,</tspan><tspan x="410" dy="22">tools, and HITL?</tspan></text>
+            <rect class="node purple-node" x="300" y="345" width="220" height="80"></rect>
+            <text x="410" y="378"><tspan>Needs code, SDKs,</tspan><tspan x="410" dy="22">repos, or tests?</tspan></text>
+            <rect class="node white-node" x="670" y="58" width="210" height="95"></rect>
+            <text class="dark-text" x="775" y="95"><tspan>Studio</tspan><tspan x="775" dy="22">Robot or workflow</tspan></text>
+            <rect class="node white-node" x="670" y="202" width="210" height="90"></rect>
+            <text class="dark-text" x="775" y="238"><tspan>Agent Builder</tspan><tspan x="775" dy="22">Low-code agent</tspan></text>
+            <rect class="node white-node" x="670" y="344" width="210" height="86"></rect>
+            <text class="dark-text" x="775" y="379"><tspan>Coded Agents</tspan><tspan x="775" dy="22">Engineer-led agent</tspan></text>
+            <rect class="node dark-node" x="980" y="200" width="175" height="90"></rect>
+            <text x="1068" y="236"><tspan>Maestro</tspan><tspan x="1068" dy="22">Orchestration layer</tspan></text>
+          </g>
+        </svg>
+        <p class="diagram-caption">If work spans multiple actors over time, use Maestro as the coordination layer.</p>
+      </section>
+
+      <section class="slide light" data-title="Selector Matrix">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Quick Selector Matrix</h2>
+          <p>Use this as the first conversation with sponsors and builders.</p>
+        </div>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>Path</th>
+              <th>Use when</th>
+              <th>Watch out for</th>
+              <th>Production focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Studio</strong></td>
+              <td>Clear rules, repeatable inputs, system execution.</td>
+              <td>Do not force AI where validation and queues solve it.</td>
+              <td>Queues, assets, logging, exceptions.</td>
+            </tr>
+            <tr>
+              <td><strong>Agent Builder</strong></td>
+              <td>Reasoning with bounded tools and human fallback.</td>
+              <td>Keep tools approved and scope narrow.</td>
+              <td>Guardrails, evals, HITL handoff.</td>
+            </tr>
+            <tr>
+              <td><strong>Coded Agents</strong></td>
+              <td>Custom code, SDKs, libraries, tests, repos.</td>
+              <td>Do not rebuild platform services in code.</td>
+              <td>Repo ownership, CI, observability.</td>
+            </tr>
+            <tr>
+              <td><strong>Maestro</strong></td>
+              <td>Multiple roles, long-running state, pause/resume.</td>
+              <td>Do not use it only to draw a workflow.</td>
+              <td>State, SLA, audit, operations.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="slide dark collage" data-title="Work First">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block wide">
+          <p class="pill">Design first</p>
+          <h2>Start with the work, not the tool.</h2>
+          <p>Only after the work answers are crisp should the build path feel obvious.</p>
+        </div>
+        <div class="process-strip">
+          <article><b>1</b><strong>Trigger</strong><span>What starts it?</span></article>
+          <article><b>2</b><strong>Knowledge</strong><span>What context is required?</span></article>
+          <article><b>3</b><strong>Actions</strong><span>What systems change?</span></article>
+          <article><b>4</b><strong>Exception</strong><span>What stops it?</span></article>
+          <article><b>5</b><strong>Evidence</strong><span>What proves it worked?</span></article>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Studio">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Build Path 1: Studio</h2>
+          <p>For deterministic automation where robots execute repeatable work reliably.</p>
+        </div>
+        <div class="three-col">
+          <article class="path-card studio">
+            <h3>Use Studio when</h3>
+            <ul>
+              <li>The steps are known and repeatable.</li>
+              <li>Inputs are structured or can be validated.</li>
+              <li>Queue-driven work improves reliability.</li>
+            </ul>
+            <span>Best matched to clear rules</span>
+          </article>
+          <article class="path-card teal-card">
+            <h3>Design pattern</h3>
+            <p>Trigger, validate input, create queue item, execute transaction, update system, write evidence.</p>
+            <span>Make failure observable</span>
+          </article>
+          <article class="path-card purple-card">
+            <h3>Demo cue</h3>
+            <p>Show a deterministic intake robot with early validation, queue status, and traceable output.</p>
+            <span>Automation with discipline</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide teal" data-title="Agent Builder">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Build Path 2: Agent Builder</h2>
+          <p>For reasoning work that needs tools, context, guardrails, and human safety.</p>
+        </div>
+        <div class="steps-grid">
+          <article><b>1</b><strong>Plan</strong><span>Goal, instructions, knowledge.</span></article>
+          <article><b>2</b><strong>Ground</strong><span>Approved tools and references.</span></article>
+          <article><b>3</b><strong>Act</strong><span>Draft, classify, enrich, recommend.</span></article>
+          <article><b>4</b><strong>Evaluate</strong><span>Trace, thresholds, feedback.</span></article>
+          <article><b>5</b><strong>Escalate</strong><span>Human-in-the-loop when needed.</span></article>
+        </div>
+        <p class="center-callout">Choose Agent Builder when the experience should stay approachable but the work needs judgment.</p>
+      </section>
+
+      <section class="slide light" data-title="Coded Agents">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Build Path 3: Coded Agents</h2>
+          <p>For engineering-led agents that need source control, SDKs, tests, and custom behavior.</p>
+        </div>
+        <div class="split">
+          <article class="dark-panel">
+            <h3>When code earns its place</h3>
+            <ul>
+              <li>Custom frameworks or libraries.</li>
+              <li>Shared services and APIs.</li>
+              <li>Rigorous tests and CI/CD.</li>
+              <li>Repository ownership.</li>
+              <li>Developer standards after launch.</li>
+            </ul>
+          </article>
+          <svg class="mini-flow" viewBox="0 0 560 260" role="img" aria-label="Coded agent build flow">
+            <defs>
+              <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              </marker>
+            </defs>
+            <path d="M115 72 H210 V130 H300"></path>
+            <path d="M405 130 H485"></path>
+            <rect class="orange-node" x="20" y="38" width="95" height="68"></rect>
+            <text x="67" y="68"><tspan>Prompt or</tspan><tspan x="67" dy="18">workflow</tspan></text>
+            <rect class="teal-node" x="300" y="98" width="105" height="68"></rect>
+            <text x="352" y="128"><tspan>Package</tspan><tspan x="352" dy="18">agent</tspan></text>
+            <rect class="blue-node" x="210" y="98" width="90" height="68"></rect>
+            <text x="255" y="128"><tspan>Agent</tspan><tspan x="255" dy="18">method</tspan></text>
+            <rect class="purple-node" x="485" y="98" width="55" height="68"></rect>
+            <text x="512" y="128"><tspan>Run</tspan><tspan x="512" dy="18">traces</tspan></text>
+          </svg>
+        </div>
+        <p class="bottom-note">Good coded agents feel like software projects that happen to run inside the automation platform.</p>
+      </section>
+
+      <section class="slide dark collage" data-title="Maestro">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block wide">
+          <p class="pill">Orchestration layer</p>
+          <h2>Build Path 4:<br>Maestro</h2>
+          <p>Use Maestro when the work is an outcome across people, robots, agents, systems, and time.</p>
+        </div>
+        <svg class="orchestration-map" viewBox="0 0 610 360" role="img" aria-label="Maestro orchestration map">
+          <defs>
+            <marker id="arrow-light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            </marker>
+          </defs>
+          <path d="M230 80 H310 V260 H230"></path>
+          <path d="M310 80 H420"></path>
+          <path d="M310 170 H420"></path>
+          <path d="M310 260 H420"></path>
+          <rect class="orange-node" x="40" y="48" width="190" height="64"></rect>
+          <text x="135" y="86">People</text>
+          <rect class="purple-node" x="40" y="138" width="190" height="64"></rect>
+          <text x="135" y="176">Agents</text>
+          <rect class="red-node" x="40" y="228" width="190" height="64"></rect>
+          <text x="135" y="266">Business rules</text>
+          <rect class="teal-node" x="420" y="48" width="150" height="64"></rect>
+          <text x="495" y="86">Robots</text>
+          <rect class="blue-node" x="420" y="138" width="150" height="64"></rect>
+          <text x="495" y="176">Systems</text>
+          <rect class="white-node" x="410" y="244" width="170" height="76"></rect>
+          <text class="dark-text" x="495" y="276"><tspan>Outcome</tspan><tspan x="495" dy="20">instance</tspan></text>
+        </svg>
+        <p class="hero-statement">Model the process. Run the instance. Monitor the outcome.</p>
+      </section>
+
+      <section class="slide teal" data-title="Architecture">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Reference Architecture</h2>
+          <p>A clean pattern for connecting agents, robots, humans, and orchestration.</p>
+        </div>
+        <svg class="diagram architecture" viewBox="0 0 1180 430" role="img" aria-label="Reference architecture">
+          <defs>
+            <marker id="arrow-arch" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            </marker>
+          </defs>
+          <g class="arch-links">
+            <path d="M185 130 H280"></path>
+            <path d="M450 130 H540"></path>
+            <path d="M710 130 H800"></path>
+            <path d="M890 130 V245 H955"></path>
+            <path d="M625 170 V285 H535"></path>
+            <path d="M710 285 H955 V245"></path>
+          </g>
+          <rect class="white-node" x="35" y="88" width="150" height="84"></rect>
+          <text class="dark-text" x="110" y="121"><tspan>Request</tspan><tspan x="110" dy="20">email, form, API</tspan></text>
+          <rect class="orange-node" x="280" y="82" width="170" height="96"></rect>
+          <text x="365" y="119"><tspan>Intake agent</tspan><tspan x="365" dy="22">classify and reason</tspan></text>
+          <rect class="dark-node" x="540" y="82" width="170" height="96"></rect>
+          <text x="625" y="119"><tspan>Decision service</tspan><tspan x="625" dy="22">rules and policy</tspan></text>
+          <rect class="blue-node" x="800" y="82" width="170" height="96"></rect>
+          <text x="885" y="119"><tspan>Robot or workflow</tspan><tspan x="885" dy="22">execute systems</tspan></text>
+          <rect class="purple-node" x="450" y="245" width="170" height="86"></rect>
+          <text x="535" y="279"><tspan>Human review</tspan><tspan x="535" dy="22">exceptions</tspan></text>
+          <rect class="white-node" x="955" y="205" width="180" height="86"></rect>
+          <text class="dark-text" x="1045" y="239"><tspan>Maestro</tspan><tspan x="1045" dy="22">state and SLAs</tspan></text>
+        </svg>
+        <p class="diagram-caption strong">Trace every action. Bound every tool. Keep humans where judgment, policy, or customer impact demands it.</p>
+      </section>
+
+      <section class="slide light" data-title="Demo Journey">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Demo Journey</h2>
+          <p>Three short demos, one shared production story.</p>
+        </div>
+        <div class="demo-cards">
+          <article class="demo-card">
+            <span>Demo 1</span>
+            <h3>Studio robot</h3>
+            <p>Rule-based work intake with validation and reliable system execution.</p>
+            <b>Observe: queues and logs</b>
+          </article>
+          <article class="demo-card">
+            <span>Demo 2</span>
+            <h3>Agent Builder</h3>
+            <p>Reasoning that uses approved tools, asks for human validation, and learns from feedback.</p>
+            <b>Decide: guardrails</b>
+          </article>
+          <article class="demo-card">
+            <span>Demo 3</span>
+            <h3>Maestro plus coded agent</h3>
+            <p>A process that pauses, routes, resumes, and manages state across multiple actors.</p>
+            <b>Operate: state and SLA</b>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Demo 1">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Demo 1: Studio Pattern</h2>
+          <p>Claim intake robot with clean inputs, queue-driven work, and traceable output.</p>
+        </div>
+        <div class="linear-flow studio-flow">
+          <span>Intake request</span>
+          <span>Validate fields</span>
+          <span>Create queue item</span>
+          <span>Update system</span>
+          <span>Write result</span>
+        </div>
+        <div class="two-panel">
+          <article>
+            <h3>What to notice</h3>
+            <ul>
+              <li>The robot owns deterministic work.</li>
+              <li>Input validation happens early.</li>
+              <li>Queue status becomes operational evidence.</li>
+            </ul>
+          </article>
+          <article class="dark-panel small">
+            <h3>Decision lesson</h3>
+            <p>If the workflow is predictable, start here. Do not add agentic complexity just to look modern.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide teal" data-title="Demo 2">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Demo 2: Agent Builder Pattern</h2>
+          <p>Helpdesk triage agent that reasons, calls bounded tools, and escalates safely.</p>
+        </div>
+        <svg class="diagram agent-flow" viewBox="0 0 1120 390" role="img" aria-label="Agent Builder demo flow">
+          <defs>
+            <marker id="arrow-agent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            </marker>
+          </defs>
+          <path d="M220 115 H330"></path>
+          <path d="M500 115 H610"></path>
+          <path d="M780 115 H890"></path>
+          <path d="M415 155 V250 H610"></path>
+          <path d="M695 250 H975 V155"></path>
+          <path d="M695 250 V190 H890"></path>
+          <rect class="white-node" x="50" y="75" width="170" height="80"></rect>
+          <text class="dark-text" x="135" y="120">Read request</text>
+          <rect class="orange-node" x="330" y="75" width="170" height="80"></rect>
+          <text x="415" y="120">Classify intent</text>
+          <rect class="blue-node" x="610" y="75" width="170" height="80"></rect>
+          <text x="695" y="120">Select tool</text>
+          <rect class="purple-node" x="890" y="75" width="170" height="80"></rect>
+          <text x="975" y="120">Draft action</text>
+          <rect class="dark-node" x="560" y="250" width="190" height="80"></rect>
+          <text x="655" y="296">Escalate if needed</text>
+        </svg>
+        <p class="diagram-caption strong">Call out approved tools, knowledge boundaries, confidence threshold, escalation message, and evaluation set.</p>
+      </section>
+
+      <section class="slide light" data-title="Demo 3">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Demo 3: Maestro plus Coded Agent Pattern</h2>
+          <p>Exception-heavy process with orchestration, custom logic, and human judgment.</p>
+        </div>
+        <div class="scenario-layout">
+          <article class="dark-panel">
+            <h3>Scenario</h3>
+            <p>A request enters with incomplete data, policy ambiguity, and system updates across multiple applications.</p>
+            <strong>The process must pause, route, resume, and preserve evidence.</strong>
+          </article>
+          <div class="role-stack">
+            <article><b class="orange-bg">Maestro</b><span>Owns state, SLA, pause and resume.</span></article>
+            <article><b class="purple-bg">Coded Agent</b><span>Handles custom reasoning or API logic.</span></article>
+            <article><b class="blue-bg">Human Task</b><span>Confirms policy or exception.</span></article>
+            <article><b class="teal-bg">Robot</b><span>Executes deterministic updates.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide teal" data-title="Readiness">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Production Readiness: Seven Gates</h2>
+          <p>A build path only counts when it can run, fail, recover, and improve.</p>
+        </div>
+        <div class="readiness-grid">
+          <article><b>1</b><strong>Data and context</strong></article>
+          <article><b>2</b><strong>RBAC and secrets</strong></article>
+          <article><b>3</b><strong>Tool boundaries</strong></article>
+          <article><b>4</b><strong>Evaluations and smoke tests</strong></article>
+          <article><b>5</b><strong>Human fallback</strong></article>
+          <article><b>6</b><strong>Logs, traces, evidence</strong></article>
+          <article><b>7</b><strong>Owner and support model</strong></article>
+        </div>
+        <p class="center-callout">For agents, run smoke tests from workflows, inspect traces, verify readiness, and design human escalation before launch.</p>
+      </section>
+
+      <section class="slide dark collage" data-title="Governance">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block">
+          <h2>Governance is part of the build path.</h2>
+        </div>
+        <div class="governance-grid">
+          <article><h3>Identity</h3><p>Users, robots, service accounts, roles, groups, and secrets are architecture.</p><span>Who can act?</span></article>
+          <article><h3>Observability</h3><p>Runs, traces, logs, queues, and process state tell operators what happened and why.</p><span>What happened?</span></article>
+          <article><h3>Change control</h3><p>Packages, versions, evaluations, test data, and rollback paths keep the system stable.</p><span>What changed?</span></article>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Clinic">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Build-Path Clinic</h2>
+          <p>Use these scenarios to make the decision framework tangible.</p>
+        </div>
+        <div class="clinic-grid">
+          <article><h3>Vendor onboarding</h3><p>Documents arrive inconsistently. Policy exceptions need review. System updates are repeatable.</p><span>Likely: Maestro plus Agent Builder plus Studio</span></article>
+          <article><h3>Daily report automation</h3><p>Predictable data pulls, transform, validate, and email distribution.</p><span>Likely: Studio workflow</span></article>
+          <article><h3>Custom research agent</h3><p>Needs Python libraries, repo ownership, and evaluation harness.</p><span>Likely: Coded Agent</span></article>
+          <article><h3>Service desk triage</h3><p>Classify cases, suggest drafts, verify tool-approved facts, escalate low confidence.</p><span>Likely: Agent Builder</span></article>
+        </div>
+      </section>
+
+      <section class="slide teal" data-title="Cheat Sheet">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Takeaway Cheat Sheet</h2>
+          <p>A fast way to explain the decision to sponsors and builders.</p>
+        </div>
+        <div class="cheat-sheet">
+          <span>"It always follows the same steps."</span><b class="orange-bg">Studio</b>
+          <span>"It needs judgment, tools, and a safe human fallback."</span><b class="teal-bg">Agent Builder</b>
+          <span>"We need custom code, libraries, tests, and repo ownership."</span><b class="purple-bg">Coded Agents</b>
+          <span>"The outcome spans teams, systems, agents, robots, and time."</span><b class="blue-bg">Maestro</b>
+          <span>"It touches production users or data."</span><b class="red-bg">Add governance, evals, logs, and ownership</b>
+        </div>
+      </section>
+
+      <section class="slide light" data-title="Resources">
+        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <div class="title-block compact">
+          <h2>Resources and Next Steps</h2>
+          <p>Keep learning, bring real scenarios, and build with the community.</p>
+        </div>
+        <div class="resource-layout">
+          <article class="info-card">
+            <h3>Bring this back to work</h3>
+            <ol>
+              <li>Pick one automation idea.</li>
+              <li>Describe trigger, knowledge, actions, exceptions, evidence.</li>
+              <li>Run it through the selector matrix.</li>
+              <li>Choose the first production-worthy build path.</li>
+              <li>Ask the community to pressure-test it.</li>
+            </ol>
+          </article>
+          <article class="dark-panel">
+            <h3>Useful links</h3>
+            <p><strong>Event page</strong><br>community.uipath.com/e/mz5gwm/</p>
+            <p><strong>Dallas chapter</strong><br>community.uipath.com/dallas-texas/</p>
+            <p><strong>UiPath docs</strong><br>docs.uipath.com</p>
+            <p><strong>Forum</strong><br>forum.uipath.com</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide dark qna" data-title="Q&amp;A">
+        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <div class="qna-content">
+          <h2>Q&amp;A</h2>
+          <p>What would you build where?</p>
+        </div>
+        <div class="qna-footer">
+          <span>Dallas UiPath Community</span>
+          <span>community.uipath.com/dallas-texas</span>
+        </div>
+      </section>
+    </main>
+
+    <nav class="deck-controls" aria-label="Presentation controls">
+      <button type="button" class="control-button" id="prevSlide" aria-label="Previous slide">Prev</button>
+      <div class="slide-status">
+        <span id="slideNumber">1</span><span>/</span><span id="slideTotal">22</span>
+      </div>
+      <button type="button" class="control-button primary" id="nextSlide" aria-label="Next slide">Next</button>
+    </nav>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+    <div class="slide-dots" id="slideDots" aria-label="Slide picker"></div>
+
+    <script src="deck.js"></script>
+  </body>
+</html>
