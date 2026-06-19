@@ -11,9 +11,9 @@
     <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body class="portrait">
     <main class="deck" aria-live="polite">
-      <section class="slide cover is-active" data-title="Cover">
+      <section id="slide-1" class="slide cover is-active" data-title="Cover">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="cover-media" aria-hidden="true">
           <img src="assets/event-banner.jpg" alt="">
@@ -28,9 +28,14 @@
             <span>JSOM1.117, Richardson, TX</span>
           </div>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-1" aria-disabled="true">Prev</a>
+          <span>1 / 22</span>
+          <a class="local-button primary" href="#slide-2">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Event">
+      <section id="slide-2" class="slide light" data-title="Event">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block">
           <p class="eyebrow orange">In-person community day</p>
@@ -71,9 +76,14 @@
             </div>
           </article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-1">Prev</a>
+          <span>2 / 22</span>
+          <a class="local-button primary" href="#slide-3">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Run of Show">
+      <section id="slide-3" class="slide light" data-title="Run of Show">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <p class="eyebrow orange">Two-hour session</p>
@@ -88,9 +98,14 @@
           <article><b>70</b><strong>Short live demos</strong><span>Studio robot, Agent Builder triage, Maestro with coded logic.</span></article>
           <article><b>100</b><strong>Build-path clinic and Q&amp;A</strong><span>Apply the framework to attendee scenarios.</span></article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-2">Prev</a>
+          <span>3 / 22</span>
+          <a class="local-button primary" href="#slide-4">Next</a>
+        </nav>
       </section>
 
-      <section class="slide dark collage" data-title="Core Idea">
+      <section id="slide-4" class="slide dark collage" data-title="Core Idea">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block">
           <p class="pill">Core idea</p>
@@ -103,9 +118,14 @@
           <article><span>Control needs</span><strong>What audit, testing, approval, and policy gates are required?</strong></article>
           <article><span>Operating model</span><strong>Who monitors, changes, and improves it after launch?</strong></article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-3">Prev</a>
+          <span>4 / 22</span>
+          <a class="local-button primary" href="#slide-5">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Decision Flow">
+      <section id="slide-5" class="slide teal" data-title="Decision Flow">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>The Build Path Decision Flow</h2>
@@ -148,9 +168,14 @@
           </g>
         </svg>
         <p class="diagram-caption">If work spans multiple actors over time, use Maestro as the coordination layer.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-4">Prev</a>
+          <span>5 / 22</span>
+          <a class="local-button primary" href="#slide-6">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Selector Matrix">
+      <section id="slide-6" class="slide light" data-title="Selector Matrix">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Quick Selector Matrix</h2>
@@ -192,9 +217,14 @@
             </tr>
           </tbody>
         </table>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-5">Prev</a>
+          <span>6 / 22</span>
+          <a class="local-button primary" href="#slide-7">Next</a>
+        </nav>
       </section>
 
-      <section class="slide dark collage" data-title="Work First">
+      <section id="slide-7" class="slide dark collage" data-title="Work First">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block wide">
           <p class="pill">Design first</p>
@@ -208,9 +238,14 @@
           <article><b>4</b><strong>Exception</strong><span>What stops it?</span></article>
           <article><b>5</b><strong>Evidence</strong><span>What proves it worked?</span></article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-6">Prev</a>
+          <span>7 / 22</span>
+          <a class="local-button primary" href="#slide-8">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Studio">
+      <section id="slide-8" class="slide light" data-title="Studio">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Build Path 1: Studio</h2>
@@ -237,9 +272,14 @@
             <span>Automation with discipline</span>
           </article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-7">Prev</a>
+          <span>8 / 22</span>
+          <a class="local-button primary" href="#slide-9">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Agent Builder">
+      <section id="slide-9" class="slide teal" data-title="Agent Builder">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Build Path 2: Agent Builder</h2>
@@ -253,9 +293,14 @@
           <article><b>5</b><strong>Escalate</strong><span>Human-in-the-loop when needed.</span></article>
         </div>
         <p class="center-callout">Choose Agent Builder when the experience should stay approachable but the work needs judgment.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-8">Prev</a>
+          <span>9 / 22</span>
+          <a class="local-button primary" href="#slide-10">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Coded Agents">
+      <section id="slide-10" class="slide light" data-title="Coded Agents">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Build Path 3: Coded Agents</h2>
@@ -291,9 +336,14 @@
           </svg>
         </div>
         <p class="bottom-note">Good coded agents feel like software projects that happen to run inside the automation platform.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-9">Prev</a>
+          <span>10 / 22</span>
+          <a class="local-button primary" href="#slide-11">Next</a>
+        </nav>
       </section>
 
-      <section class="slide dark collage" data-title="Maestro">
+      <section id="slide-11" class="slide dark collage" data-title="Maestro">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block wide">
           <p class="pill">Orchestration layer</p>
@@ -324,9 +374,14 @@
           <text class="dark-text" x="495" y="276"><tspan>Outcome</tspan><tspan x="495" dy="20">instance</tspan></text>
         </svg>
         <p class="hero-statement">Model the process. Run the instance. Monitor the outcome.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-10">Prev</a>
+          <span>11 / 22</span>
+          <a class="local-button primary" href="#slide-12">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Architecture">
+      <section id="slide-12" class="slide teal" data-title="Architecture">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Reference Architecture</h2>
@@ -360,9 +415,14 @@
           <text class="dark-text" x="1045" y="239"><tspan>Maestro</tspan><tspan x="1045" dy="22">state and SLAs</tspan></text>
         </svg>
         <p class="diagram-caption strong">Trace every action. Bound every tool. Keep humans where judgment, policy, or customer impact demands it.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-11">Prev</a>
+          <span>12 / 22</span>
+          <a class="local-button primary" href="#slide-13">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Demo Journey">
+      <section id="slide-13" class="slide light" data-title="Demo Journey">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Demo Journey</h2>
@@ -388,9 +448,14 @@
             <b>Operate: state and SLA</b>
           </article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-12">Prev</a>
+          <span>13 / 22</span>
+          <a class="local-button primary" href="#slide-14">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Demo 1">
+      <section id="slide-14" class="slide light" data-title="Demo 1">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Demo 1: Studio Pattern</h2>
@@ -417,9 +482,14 @@
             <p>If the workflow is predictable, start here. Do not add agentic complexity just to look modern.</p>
           </article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-13">Prev</a>
+          <span>14 / 22</span>
+          <a class="local-button primary" href="#slide-15">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Demo 2">
+      <section id="slide-15" class="slide teal" data-title="Demo 2">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Demo 2: Agent Builder Pattern</h2>
@@ -449,9 +519,14 @@
           <text x="655" y="296">Escalate if needed</text>
         </svg>
         <p class="diagram-caption strong">Call out approved tools, knowledge boundaries, confidence threshold, escalation message, and evaluation set.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-14">Prev</a>
+          <span>15 / 22</span>
+          <a class="local-button primary" href="#slide-16">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Demo 3">
+      <section id="slide-16" class="slide light" data-title="Demo 3">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Demo 3: Maestro plus Coded Agent Pattern</h2>
@@ -470,9 +545,14 @@
             <article><b class="teal-bg">Robot</b><span>Executes deterministic updates.</span></article>
           </div>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-15">Prev</a>
+          <span>16 / 22</span>
+          <a class="local-button primary" href="#slide-17">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Readiness">
+      <section id="slide-17" class="slide teal" data-title="Readiness">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Production Readiness: Seven Gates</h2>
@@ -488,9 +568,14 @@
           <article><b>7</b><strong>Owner and support model</strong></article>
         </div>
         <p class="center-callout">For agents, run smoke tests from workflows, inspect traces, verify readiness, and design human escalation before launch.</p>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-16">Prev</a>
+          <span>17 / 22</span>
+          <a class="local-button primary" href="#slide-18">Next</a>
+        </nav>
       </section>
 
-      <section class="slide dark collage" data-title="Governance">
+      <section id="slide-18" class="slide dark collage" data-title="Governance">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block">
           <h2>Governance is part of the build path.</h2>
@@ -500,9 +585,14 @@
           <article><h3>Observability</h3><p>Runs, traces, logs, queues, and process state tell operators what happened and why.</p><span>What happened?</span></article>
           <article><h3>Change control</h3><p>Packages, versions, evaluations, test data, and rollback paths keep the system stable.</p><span>What changed?</span></article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-17">Prev</a>
+          <span>18 / 22</span>
+          <a class="local-button primary" href="#slide-19">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Clinic">
+      <section id="slide-19" class="slide light" data-title="Clinic">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Build-Path Clinic</h2>
@@ -514,9 +604,14 @@
           <article><h3>Custom research agent</h3><p>Needs Python libraries, repo ownership, and evaluation harness.</p><span>Likely: Coded Agent</span></article>
           <article><h3>Service desk triage</h3><p>Classify cases, suggest drafts, verify tool-approved facts, escalate low confidence.</p><span>Likely: Agent Builder</span></article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-18">Prev</a>
+          <span>19 / 22</span>
+          <a class="local-button primary" href="#slide-20">Next</a>
+        </nav>
       </section>
 
-      <section class="slide teal" data-title="Cheat Sheet">
+      <section id="slide-20" class="slide teal" data-title="Cheat Sheet">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Takeaway Cheat Sheet</h2>
@@ -529,9 +624,14 @@
           <span>"The outcome spans teams, systems, agents, robots, and time."</span><b class="blue-bg">Maestro</b>
           <span>"It touches production users or data."</span><b class="red-bg">Add governance, evals, logs, and ownership</b>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-19">Prev</a>
+          <span>20 / 22</span>
+          <a class="local-button primary" href="#slide-21">Next</a>
+        </nav>
       </section>
 
-      <section class="slide light" data-title="Resources">
+      <section id="slide-21" class="slide light" data-title="Resources">
         <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
         <div class="title-block compact">
           <h2>Resources and Next Steps</h2>
@@ -556,9 +656,14 @@
             <p><strong>Forum</strong><br>forum.uipath.com</p>
           </article>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-20">Prev</a>
+          <span>21 / 22</span>
+          <a class="local-button primary" href="#slide-22">Next</a>
+        </nav>
       </section>
 
-      <section class="slide dark qna" data-title="Q&amp;A">
+      <section id="slide-22" class="slide dark qna" data-title="Q&amp;A">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="qna-content">
           <h2>Q&amp;A</h2>
@@ -568,18 +673,13 @@
           <span>Dallas UiPath Community</span>
           <span>community.uipath.com/dallas-texas</span>
         </div>
+        <nav class="slide-local-nav" aria-label="Slide navigation">
+          <a class="local-button" href="#slide-21">Prev</a>
+          <span>22 / 22</span>
+          <a class="local-button primary" href="#slide-22" aria-disabled="true">Next</a>
+        </nav>
       </section>
     </main>
-
-    <nav class="deck-controls" aria-label="Presentation controls">
-      <button type="button" class="control-button" id="prevSlide" aria-label="Previous slide">Prev</button>
-      <div class="slide-status">
-        <span id="slideNumber">1</span><span>/</span><span id="slideTotal">22</span>
-      </div>
-      <button type="button" class="control-button primary" id="nextSlide" aria-label="Next slide">Next</button>
-    </nav>
-    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-    <div class="slide-dots" id="slideDots" aria-label="Slide picker"></div>
 
     <script src="deck.js"></script>
   </body>
