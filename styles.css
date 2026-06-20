@@ -1409,476 +1409,296 @@ html.js-enabled {
   overflow: hidden;
 }
 
-body.portrait {
+body.landscape {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 18px 18px 84px;
+  padding: 10px;
   overflow: hidden;
   background: #0f1519;
 }
 
-body.portrait .deck {
-  width: 720px;
-  height: 1280px;
+body.landscape .deck {
+  width: 1280px;
+  height: 720px;
   max-height: none;
   aspect-ratio: auto;
   transform: scale(var(--deck-scale, 1));
   transform-origin: center;
 }
 
-body.portrait.js-enabled .deck {
+body.landscape.js-enabled .deck {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(var(--deck-scale, 1));
 }
 
-body.portrait:not(.js-enabled) {
+body.landscape:not(.js-enabled) {
   display: block;
   overflow: auto;
+  padding: 12px 12px 78px;
 }
 
-body.portrait:not(.js-enabled) .deck {
-  width: min(720px, calc(100vw - 36px));
+body.landscape:not(.js-enabled) .deck {
+  width: min(1280px, calc(100vw - 24px));
+  height: auto;
   margin: 0 auto;
+  aspect-ratio: 16 / 9;
 }
 
-body.portrait .slide {
+body.landscape .slide {
   position: absolute;
+  inset: 0;
   min-height: auto;
-  padding: 58px 54px 116px;
+  padding: 42px 52px;
   overflow: hidden;
 }
 
-body.portrait:not(.js-enabled) .slide {
-  overflow: auto;
+body.landscape .cover {
+  padding: 0;
 }
 
-body.portrait .slide::before {
-  left: 34px;
-  bottom: 26px;
-  font-size: 10px;
-}
-
-body.portrait .slide::after {
-  right: 34px;
-  bottom: 25px;
-}
-
-body.portrait .brand {
+body.landscape .brand {
   position: absolute;
+  right: 38px;
   top: 34px;
-  right: 34px;
-  width: 210px;
+  width: 310px;
   margin: 0;
 }
 
-body.portrait .brand-dark {
-  left: 34px;
+body.landscape .brand-dark {
+  left: 24px;
   right: auto;
-  width: 218px;
+  top: 28px;
+  width: 280px;
 }
 
-body.portrait .teal .brand-dark {
+body.landscape .teal .brand-dark {
   left: auto;
-  right: 36px;
-  width: 132px;
+  right: 38px;
+  top: 34px;
+  width: 156px;
 }
 
-body.portrait .title-block,
-body.portrait .title-block.compact,
-body.portrait .title-block.wide {
-  max-width: 100%;
-  padding-right: 164px;
+body.landscape .title-block h2,
+body.landscape .qna h2 {
+  font-size: 42px;
 }
 
-body.portrait .dark:not(.cover) .title-block {
-  margin-top: 80px;
-}
-
-body.portrait .teal .title-block {
-  padding-right: 150px;
-}
-
-body.portrait .title-block h2,
-body.portrait .qna h2 {
-  font-size: 44px;
-  line-height: 1.05;
-}
-
-body.portrait .title-block p {
-  font-size: 20px;
-}
-
-body.portrait .eyebrow,
-body.portrait .pill {
-  font-size: 12px;
-}
-
-body.portrait .cover {
+body.landscape .cover-panel {
+  position: absolute;
+  left: 58px;
+  top: 132px;
+  width: 620px;
   padding: 0;
 }
 
-body.portrait .cover-media::after {
-  background:
-    linear-gradient(180deg, rgba(24, 33, 38, 0.96) 0%, rgba(24, 33, 38, 0.82) 54%, rgba(24, 33, 38, 0.38) 100%),
-    radial-gradient(circle at 78% 18%, rgba(250, 70, 22, 0.42), transparent 26%),
-    radial-gradient(circle at 22% 76%, rgba(11, 162, 179, 0.38), transparent 28%);
-}
-
-body.portrait .cover-panel {
-  left: 52px;
-  top: 312px;
-  width: 604px;
-  padding: 0;
-}
-
-body.portrait .cover-panel h1 {
+body.landscape .cover-panel h1 {
   font-size: 62px;
 }
 
-body.portrait .lede {
-  max-width: 560px;
-  font-size: 24px;
+body.landscape .cover-media {
+  position: absolute;
 }
 
-body.portrait .event-strip {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 420px;
-}
-
-body.portrait .event-layout,
-body.portrait .agenda,
-body.portrait .three-col,
-body.portrait .demo-cards,
-body.portrait .split,
-body.portrait .two-panel,
-body.portrait .scenario-layout,
-body.portrait .resource-layout,
-body.portrait .clinic-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 22px;
-  margin: 34px 0 0;
-}
-
-body.portrait .event-photo {
-  height: 264px;
-  border-radius: 8px;
-}
-
-body.portrait .info-stack {
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-body.portrait .info-card {
-  min-height: 126px;
-  padding: 22px;
-}
-
-body.portrait .info-card strong {
-  font-size: 22px;
-}
-
-body.portrait .hosts-row {
-  position: static;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
+body.landscape .event-layout {
+  grid-template-columns: 520px 1fr;
+  gap: 38px;
   margin-top: 22px;
 }
 
-body.portrait .host {
-  grid-template-columns: 76px 1fr;
-  gap: 18px;
-  padding: 16px 18px;
+body.landscape .event-photo {
+  height: 198px;
 }
 
-body.portrait .host img {
-  width: 72px;
-  height: 72px;
+body.landscape .info-stack {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
 }
 
-body.portrait .host strong {
+body.landscape .info-card {
+  min-height: 98px;
+  padding: 18px 20px;
+}
+
+body.landscape .info-card strong {
   font-size: 20px;
 }
 
-body.portrait .agenda {
-  gap: 14px;
-  max-width: none;
+body.landscape .info-card p {
+  font-size: 15px;
 }
 
-body.portrait .agenda article {
-  min-height: 88px;
-  padding: 16px 18px;
-}
-
-body.portrait .agenda strong {
-  font-size: 18px;
-}
-
-body.portrait .signal-grid,
-body.portrait .process-strip,
-body.portrait .steps-grid,
-body.portrait .readiness-grid,
-body.portrait .governance-grid {
-  position: static;
-  display: grid;
+body.landscape .hosts-row {
+  position: absolute;
+  left: 52px;
+  right: 52px;
+  bottom: 86px;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+body.landscape .host {
+  grid-template-columns: 72px 1fr;
   gap: 16px;
-  margin: 48px 0 0;
+  padding: 14px 18px;
 }
 
-body.portrait .signal-grid article {
-  min-height: 136px;
-  padding: 20px;
+body.landscape .host img {
+  width: 68px;
+  height: 68px;
 }
 
-body.portrait .signal-grid strong {
-  font-size: 18px;
+body.landscape .host strong {
+  font-size: 20px;
 }
 
-body.portrait .diagram,
-body.portrait .mini-flow,
-body.portrait .orchestration-map {
-  position: static;
-  width: 100%;
-  height: auto;
-  margin-top: 42px;
+body.landscape .agenda {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1020px;
+  margin-top: 34px;
 }
 
-body.portrait .diagram text,
-body.portrait .mini-flow text,
-body.portrait .orchestration-map text {
-  font-size: 18px;
+body.landscape .signal-grid {
+  position: absolute;
+  left: 52px;
+  right: 52px;
+  bottom: 94px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
 }
 
-body.portrait .diagram-caption,
-body.portrait .diagram-caption.strong {
-  position: static;
+body.landscape .diagram {
+  position: absolute;
+  left: 52px;
+  right: 52px;
+  bottom: 90px;
+  width: calc(100% - 104px);
+  height: 430px;
+  margin: 0;
+}
+
+body.landscape .diagram-caption {
+  position: absolute;
+  left: 52px;
+  right: 52px;
+  bottom: 58px;
   width: auto;
-  margin: 24px 0 0;
-  font-size: 18px;
+  margin: 0;
 }
 
-body.portrait .matrix {
-  width: 100%;
-  margin: 38px 0 0;
-  font-size: 13px;
+body.landscape .process-strip {
+  position: absolute;
+  left: 58px;
+  right: 58px;
+  bottom: 172px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
 }
 
-body.portrait .matrix th,
-body.portrait .matrix td {
-  padding: 12px 10px;
+body.landscape .three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 58px;
 }
 
-body.portrait .process-strip {
-  margin-top: 56px;
+body.landscape .steps-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 74px 36px 0;
 }
 
-body.portrait .process-strip article {
-  min-height: 128px;
-  padding: 20px;
-}
-
-body.portrait .process-strip article:last-child {
-  grid-column: 1 / -1;
-}
-
-body.portrait .path-card,
-body.portrait .demo-card,
-body.portrait .dark-panel {
-  min-height: auto;
-  padding: 26px;
-}
-
-body.portrait .path-card h3,
-body.portrait .two-panel h3,
-body.portrait .demo-card h3,
-body.portrait .dark-panel h3,
-body.portrait .clinic-grid h3,
-body.portrait .resource-layout h3 {
-  font-size: 25px;
-}
-
-body.portrait .path-card span {
-  margin-top: 18px;
-}
-
-body.portrait .steps-grid {
-  margin-top: 60px;
-}
-
-body.portrait .steps-grid article {
-  min-height: 178px;
-  padding: 22px;
-}
-
-body.portrait .steps-grid article:last-child {
-  grid-column: 1 / -1;
-}
-
-body.portrait .center-callout,
-body.portrait .bottom-note,
-body.portrait .hero-statement {
-  position: static;
-  width: auto;
-  margin: 34px 0 0;
-  text-align: center;
-}
-
-body.portrait .center-callout {
-  font-size: 22px;
-}
-
-body.portrait .split {
-  align-items: stretch;
-}
-
-body.portrait .mini-flow {
-  height: 248px;
-}
-
-body.portrait .orchestration-map {
-  height: 420px;
-}
-
-body.portrait .hero-statement {
-  font-size: 30px;
-}
-
-body.portrait .demo-cards {
-  gap: 18px;
-}
-
-body.portrait .demo-card p {
-  min-height: auto;
-  font-size: 18px;
-}
-
-body.portrait .linear-flow {
-  grid-template-columns: 1fr;
-  gap: 12px;
-  margin: 56px 48px 0;
-}
-
-body.portrait .linear-flow::before {
-  display: none;
-}
-
-body.portrait .linear-flow span {
-  min-height: 62px;
-}
-
-body.portrait .two-panel {
-  gap: 24px;
-}
-
-body.portrait .two-panel article {
-  min-height: auto;
-  padding: 28px;
-}
-
-body.portrait .agent-flow {
-  height: auto;
-}
-
-body.portrait .scenario-layout .dark-panel {
-  min-height: auto;
-}
-
-body.portrait .role-stack {
-  gap: 16px;
-}
-
-body.portrait .role-stack article {
-  grid-template-columns: 156px 1fr;
-  min-height: 82px;
-}
-
-body.portrait .role-stack span {
-  padding: 0 24px;
-}
-
-body.portrait .readiness-grid {
+body.landscape .split {
+  grid-template-columns: 410px 1fr;
   margin-top: 48px;
 }
 
-body.portrait .readiness-grid article {
-  min-height: 126px;
+body.landscape .bottom-note {
+  position: absolute;
+  right: 98px;
+  bottom: 86px;
+  width: 500px;
+  margin: 0;
 }
 
-body.portrait .readiness-grid article:last-child {
-  grid-column: 1 / -1;
+body.landscape .orchestration-map {
+  position: absolute;
+  right: 82px;
+  top: 136px;
+  width: 560px;
+  height: 360px;
+  margin: 0;
 }
 
-body.portrait .readiness-grid + .center-callout {
-  font-size: 19px;
+body.landscape .hero-statement {
+  position: absolute;
+  right: 86px;
+  bottom: 116px;
+  width: 520px;
+  margin: 0;
 }
 
-body.portrait .governance-grid {
-  grid-template-columns: 1fr;
-  margin-top: 44px;
+body.landscape .demo-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 58px;
 }
 
-body.portrait .governance-grid article {
-  min-height: auto;
-  padding: 26px;
+body.landscape .linear-flow {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 58px;
+  margin: 106px 44px 0;
 }
 
-body.portrait .governance-grid p {
-  min-height: auto;
+body.landscape .linear-flow::before {
+  display: block;
 }
 
-body.portrait .clinic-grid {
+body.landscape .two-panel {
   grid-template-columns: 1fr 1fr;
+  gap: 78px;
+  margin: 86px 64px 0;
 }
 
-body.portrait .clinic-grid article {
-  min-height: 178px;
-  padding: 22px;
+body.landscape .scenario-layout {
+  grid-template-columns: 320px 1fr;
+  gap: 58px;
+  margin-top: 38px;
 }
 
-body.portrait .cheat-sheet {
-  grid-template-columns: 1fr;
-  gap: 12px;
-  margin: 52px 20px 0;
+body.landscape .readiness-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 50px 28px 0;
 }
 
-body.portrait .cheat-sheet span {
-  min-height: 62px;
-  padding: 0 26px;
-  font-size: 19px;
-}
-
-body.portrait .cheat-sheet b {
-  min-height: 58px;
-  font-size: 19px;
-}
-
-body.portrait .resource-layout article {
-  min-height: auto;
-  padding: 28px;
-}
-
-body.portrait .qna-content {
+body.landscape .governance-grid {
   position: absolute;
-  left: 62px;
-  top: 438px;
+  left: 58px;
+  right: 58px;
+  bottom: 104px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
 }
 
-body.portrait .qna-content h2 {
-  font-size: 86px;
+body.landscape .clinic-grid,
+body.landscape .resource-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-body.portrait .qna-footer {
+body.landscape .cheat-sheet {
+  grid-template-columns: 1fr 342px;
+  gap: 24px 28px;
+  margin: 34px 44px 0;
+}
+
+body.landscape .qna-content {
   position: absolute;
-  right: 62px;
-  bottom: 142px;
-  font-size: 20px;
+  left: 70px;
+  top: 210px;
+}
+
+body.landscape .qna-footer {
+  position: absolute;
+  right: 70px;
+  bottom: 96px;
 }
 
 .slide-local-nav {

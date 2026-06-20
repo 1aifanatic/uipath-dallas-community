@@ -6,17 +6,16 @@ document.body.classList.add("js-enabled");
 
 let activeIndex = 0;
 
-function updatePortraitScale() {
-  if (!document.body.classList.contains("portrait")) return;
+function updateDeckScale() {
+  if (!document.body.classList.contains("landscape")) return;
 
-  const slideWidth = 720;
-  const slideHeight = 1280;
-  const horizontalMargin = 36;
-  const verticalMargin = 104;
+  const slideWidth = 1280;
+  const slideHeight = 720;
+  const horizontalMargin = 24;
+  const verticalMargin = 32;
   const scale = Math.min(
     (window.innerWidth - horizontalMargin) / slideWidth,
     (window.innerHeight - verticalMargin) / slideHeight,
-    1,
   );
 
   const boundedScale = Math.max(scale, 0.32);
@@ -115,7 +114,7 @@ window.addEventListener("hashchange", () => {
   showSlide(slideIndexFromHash(), false);
 });
 
-window.addEventListener("resize", updatePortraitScale);
+window.addEventListener("resize", updateDeckScale);
 
-updatePortraitScale();
+updateDeckScale();
 showSlide(slideIndexFromHash(), false);
