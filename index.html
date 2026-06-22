@@ -12,9 +12,35 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="landscape">
+    <svg class="logo-sprite" aria-hidden="true" focusable="false">
+      <symbol id="uipath-community-logo" viewBox="0 0 676 180">
+        <defs>
+          <linearGradient id="uipath-logo-bg" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stop-color="#10aebb"></stop>
+            <stop offset="1" stop-color="#078c99"></stop>
+          </linearGradient>
+          <linearGradient id="uipath-logo-shine" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"></stop>
+            <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.02"></stop>
+            <stop offset="1" stop-color="#00333a" stop-opacity="0.12"></stop>
+          </linearGradient>
+        </defs>
+        <rect width="676" height="180" rx="16" fill="url(#uipath-logo-bg)"></rect>
+        <rect y="133" width="676" height="47" fill="#067b86" opacity="0.28"></rect>
+        <rect width="676" height="180" rx="16" fill="url(#uipath-logo-shine)"></rect>
+        <g fill="#ffffff">
+          <text x="48" y="116" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800" letter-spacing="0">UiPath Community</text>
+          <g transform="translate(126 42)">
+            <path d="M0 -20 L5 -5 L20 0 L5 5 L0 20 L-5 5 L-20 0 L-5 -5 Z"></path>
+            <path d="M28 -24 L31 -16 L39 -13 L31 -10 L28 -2 L25 -10 L17 -13 L25 -16 Z" opacity="0.9"></path>
+            <circle cx="-24" cy="-18" r="4" opacity="0.9"></circle>
+          </g>
+        </g>
+      </symbol>
+    </svg>
     <main class="deck" aria-live="polite">
       <section id="slide-1" class="slide cover is-active" data-title="Cover">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="cover-media" aria-hidden="true">
           <img src="assets/event-banner.jpg" alt="">
         </div>
@@ -36,7 +62,7 @@
       </section>
 
       <section id="slide-2" class="slide light" data-title="Event">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block">
           <p class="eyebrow orange">In-person community day</p>
           <h2>Dallas UiPath Community Day</h2>
@@ -84,7 +110,7 @@
       </section>
 
       <section id="slide-3" class="slide light" data-title="Run of Show">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <p class="eyebrow orange">Two-hour session</p>
           <h2>Run of Show</h2>
@@ -106,7 +132,7 @@
       </section>
 
       <section id="slide-4" class="slide dark collage" data-title="Core Idea">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block">
           <p class="pill">Core idea</p>
           <h2>Use the lightest build path that can survive production.</h2>
@@ -126,7 +152,7 @@
       </section>
 
       <section id="slide-5" class="slide teal" data-title="Decision Flow">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>The Build Path Decision Flow</h2>
           <p>Start from the work. Let the tool choice fall out of the constraints.</p>
@@ -176,7 +202,7 @@
       </section>
 
       <section id="slide-6" class="slide light" data-title="Selector Matrix">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Quick Selector Matrix</h2>
           <p>Use this as the first conversation with sponsors and builders.</p>
@@ -225,7 +251,7 @@
       </section>
 
       <section id="slide-7" class="slide dark collage" data-title="Work First">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block wide">
           <p class="pill">Design first</p>
           <h2>Start with the work, not the tool.</h2>
@@ -246,7 +272,7 @@
       </section>
 
       <section id="slide-8" class="slide light" data-title="Studio">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Build Path 1: Studio</h2>
           <p>For deterministic automation where robots execute repeatable work reliably.</p>
@@ -280,7 +306,7 @@
       </section>
 
       <section id="slide-9" class="slide teal" data-title="Agent Builder">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Build Path 2: Agent Builder</h2>
           <p>For reasoning work that needs tools, context, guardrails, and human safety.</p>
@@ -301,7 +327,7 @@
       </section>
 
       <section id="slide-10" class="slide light" data-title="Coded Agents">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Build Path 3: Coded Agents</h2>
           <p>For engineering-led agents that need source control, SDKs, tests, and custom behavior.</p>
@@ -353,7 +379,7 @@
       </section>
 
       <section id="slide-11" class="slide dark collage orchestration-slide" data-title="Maestro">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block wide">
           <p class="pill">Orchestration layer</p>
           <h2>Build Path 4:<br>Maestro</h2>
@@ -397,7 +423,7 @@
       </section>
 
       <section id="slide-12" class="slide teal" data-title="Architecture">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Reference Architecture</h2>
           <p>A clean pattern for connecting agents, robots, humans, and orchestration.</p>
@@ -444,7 +470,7 @@
       </section>
 
       <section id="slide-13" class="slide light" data-title="Demo Journey">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Demo Journey</h2>
           <p>Three short demos, one shared production story.</p>
@@ -477,7 +503,7 @@
       </section>
 
       <section id="slide-14" class="slide light" data-title="Demo 1">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Demo 1: Studio Pattern</h2>
           <p>Claim intake robot with clean inputs, queue-driven work, and traceable output.</p>
@@ -511,7 +537,7 @@
       </section>
 
       <section id="slide-15" class="slide teal" data-title="Demo 2">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Demo 2: Agent Builder Pattern</h2>
           <p>Helpdesk triage agent that reasons, calls bounded tools, and escalates safely.</p>
@@ -552,7 +578,7 @@
       </section>
 
       <section id="slide-16" class="slide light" data-title="Demo 3">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Demo 3: Maestro plus Coded Agent Pattern</h2>
           <p>Exception-heavy process with orchestration, custom logic, and human judgment.</p>
@@ -578,7 +604,7 @@
       </section>
 
       <section id="slide-17" class="slide teal" data-title="Readiness">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Production Readiness: Seven Gates</h2>
           <p>A build path only counts when it can run, fail, recover, and improve.</p>
@@ -601,7 +627,7 @@
       </section>
 
       <section id="slide-18" class="slide dark collage" data-title="Governance">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block">
           <h2>Governance is part of the build path.</h2>
         </div>
@@ -618,7 +644,7 @@
       </section>
 
       <section id="slide-19" class="slide light" data-title="Clinic">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Build-Path Clinic</h2>
           <p>Use these scenarios to make the decision framework tangible.</p>
@@ -637,7 +663,7 @@
       </section>
 
       <section id="slide-20" class="slide teal" data-title="Cheat Sheet">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Takeaway Cheat Sheet</h2>
           <p>A fast way to explain the decision to sponsors and builders.</p>
@@ -657,7 +683,7 @@
       </section>
 
       <section id="slide-21" class="slide light" data-title="Resources">
-        <img class="brand" src="assets/uipath-community.png" alt="UiPath Community">
+        <svg class="brand brand-logo" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="title-block compact">
           <h2>Resources and Next Steps</h2>
           <p>Keep learning, bring real scenarios, and build with the community.</p>
@@ -689,7 +715,7 @@
       </section>
 
       <section id="slide-22" class="slide dark qna" data-title="Q&amp;A">
-        <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
+        <svg class="brand brand-logo brand-dark" role="img" aria-label="UiPath Community"><use href="#uipath-community-logo"></use></svg>
         <div class="qna-content">
           <h2>Q&amp;A</h2>
           <p>What would you build where?</p>
