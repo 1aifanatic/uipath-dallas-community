@@ -118,20 +118,21 @@ button {
   width: 310px;
   height: auto;
   z-index: 5;
+  border-radius: 4px;
 }
 
 .brand-dark {
   left: 24px;
   right: auto;
   top: 28px;
-  width: 280px;
+  width: 310px;
 }
 
 .teal .brand-dark {
   left: auto;
   right: 38px;
   top: 34px;
-  width: 156px;
+  width: 268px;
 }
 
 .dark:not(.cover) .title-block {
@@ -513,10 +514,36 @@ button {
 .orchestration-map path {
   fill: none;
   stroke: var(--white);
-  stroke-width: 4;
+  stroke-width: 5.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   marker-end: url(#arrow-white);
+}
+
+.diagram .links path,
+.diagram .arch-links path,
+.mini-flow .links path,
+.orchestration-map .links path {
+  opacity: 0.96;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.22));
+}
+
+.diagram marker .marker-head,
+.mini-flow marker .marker-head,
+.orchestration-map marker .marker-head {
+  fill: currentColor;
+  stroke: none;
+}
+
+.decision-diagram,
+.architecture,
+.agent-flow,
+.orchestration-map {
+  color: var(--white);
+}
+
+.mini-flow {
+  color: #404b52;
 }
 
 .architecture path {
@@ -529,6 +556,13 @@ button {
 
 .decision-diagram .links path {
   marker-end: url(#arrow-white);
+}
+
+.coded-agent-flow .secondary-link {
+  marker-end: none;
+  opacity: 0.55;
+  stroke-dasharray: 8 8;
+  stroke-width: 3;
 }
 
 .node {
@@ -1471,14 +1505,14 @@ body.landscape .brand-dark {
   left: 24px;
   right: auto;
   top: 28px;
-  width: 280px;
+  width: 310px;
 }
 
 body.landscape .teal .brand-dark {
   left: auto;
   right: 38px;
   top: 34px;
-  width: 156px;
+  width: 268px;
 }
 
 body.landscape .title-block h2,
@@ -1627,6 +1661,10 @@ body.landscape .orchestration-map {
   width: 560px;
   height: 360px;
   margin: 0;
+}
+
+body.landscape .orchestration-slide .title-block {
+  max-width: 560px;
 }
 
 body.landscape .hero-statement {

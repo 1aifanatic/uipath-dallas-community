@@ -65,14 +65,14 @@
             <img src="assets/naveen-chatlapalli.jpg" alt="Naveen Chatlapalli">
             <div>
               <strong>Naveen Chatlapalli</strong>
-              <span>Sr. Manager, Solution Architecture and UiPath MVP</span>
+              <span>Sr. Manager, Solution Architecture and UiPath MVP 3X</span>
             </div>
           </article>
           <article class="host">
             <img src="assets/karthik-kapula.jpg" alt="Karthik Kapula">
             <div>
               <strong>Karthik Kapula</strong>
-              <span>UiPath Solution Architect, Lead Developer, UiPath MVP 2X</span>
+              <span>UiPath Solution Architect, Lead Developer, UiPath MVP 3X</span>
             </div>
           </article>
         </div>
@@ -131,40 +131,40 @@
           <h2>The Build Path Decision Flow</h2>
           <p>Start from the work. Let the tool choice fall out of the constraints.</p>
         </div>
-        <svg class="diagram decision-diagram" viewBox="0 0 1180 430" role="img" aria-label="Decision flow from work definition to Studio, Agent Builder, Coded Agents, and Maestro">
+        <svg class="diagram decision-diagram flow-diagram" viewBox="0 0 1180 430" role="img" aria-label="Decision flow from work definition to Studio, Agent Builder, Coded Agents, and Maestro">
           <defs>
-            <marker id="arrow-white" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            <marker id="arrow-white" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+              <path class="marker-head" d="M 1 1 L 11 6 L 1 11 Z"></path>
             </marker>
           </defs>
           <g class="links">
-            <path d="M205 105 H300"></path>
-            <path d="M520 105 H670"></path>
-            <path d="M420 150 V210"></path>
-            <path d="M520 245 H670"></path>
-            <path d="M420 290 V350"></path>
-            <path d="M520 385 H670"></path>
-            <path d="M880 105 H1000 V245 H980"></path>
-            <path d="M880 245 H980"></path>
-            <path d="M880 385 H1000 V245 H980"></path>
+            <path d="M220 215 H260 V105 H305"></path>
+            <path d="M260 215 H305"></path>
+            <path d="M260 215 V325 H305"></path>
+            <path d="M545 105 H645"></path>
+            <path d="M545 215 H645"></path>
+            <path d="M545 325 H645"></path>
+            <path d="M890 105 H925 Q955 105 955 135 V185 Q955 215 985 215"></path>
+            <path d="M890 215 H985"></path>
+            <path d="M890 325 H925 Q955 325 955 295 V245 Q955 215 985 215"></path>
           </g>
           <g class="nodes">
-            <rect class="node dark-node" x="35" y="65" width="170" height="80"></rect>
-            <text x="120" y="98"><tspan>Define outcome</tspan><tspan x="120" dy="20">and risk</tspan></text>
-            <rect class="node orange-node" x="300" y="55" width="220" height="100"></rect>
-            <text x="410" y="92"><tspan>Mostly deterministic</tspan><tspan x="410" dy="22">UI or API work?</tspan></text>
-            <rect class="node blue-node" x="300" y="205" width="220" height="85"></rect>
-            <text x="410" y="239"><tspan>Needs reasoning,</tspan><tspan x="410" dy="22">tools, and HITL?</tspan></text>
-            <rect class="node purple-node" x="300" y="345" width="220" height="80"></rect>
-            <text x="410" y="378"><tspan>Needs code, SDKs,</tspan><tspan x="410" dy="22">repos, or tests?</tspan></text>
-            <rect class="node white-node" x="670" y="58" width="210" height="95"></rect>
-            <text class="dark-text" x="775" y="95"><tspan>Studio</tspan><tspan x="775" dy="22">Robot or workflow</tspan></text>
-            <rect class="node white-node" x="670" y="202" width="210" height="90"></rect>
-            <text class="dark-text" x="775" y="238"><tspan>Agent Builder</tspan><tspan x="775" dy="22">Low-code agent</tspan></text>
-            <rect class="node white-node" x="670" y="344" width="210" height="86"></rect>
-            <text class="dark-text" x="775" y="379"><tspan>Coded Agents</tspan><tspan x="775" dy="22">Engineer-led agent</tspan></text>
-            <rect class="node dark-node" x="980" y="200" width="175" height="90"></rect>
-            <text x="1068" y="236"><tspan>Maestro</tspan><tspan x="1068" dy="22">Orchestration layer</tspan></text>
+            <rect class="node dark-node" x="35" y="170" width="185" height="90"></rect>
+            <text x="128" y="205"><tspan>Define work</tspan><tspan x="128" dy="22">outcome + risk</tspan></text>
+            <rect class="node orange-node" x="305" y="60" width="240" height="90"></rect>
+            <text x="425" y="94"><tspan>Deterministic?</tspan><tspan x="425" dy="22">UI/API rules</tspan></text>
+            <rect class="node blue-node" x="305" y="170" width="240" height="90"></rect>
+            <text x="425" y="204"><tspan>Needs judgment?</tspan><tspan x="425" dy="22">Tools + HITL</tspan></text>
+            <rect class="node purple-node" x="305" y="280" width="240" height="90"></rect>
+            <text x="425" y="314"><tspan>Needs engineering?</tspan><tspan x="425" dy="22">SDKs + tests</tspan></text>
+            <rect class="node white-node" x="645" y="62" width="245" height="86"></rect>
+            <text class="dark-text" x="768" y="96"><tspan>Studio</tspan><tspan x="768" dy="22">Robot or workflow</tspan></text>
+            <rect class="node white-node" x="645" y="172" width="245" height="86"></rect>
+            <text class="dark-text" x="768" y="206"><tspan>Agent Builder</tspan><tspan x="768" dy="22">Low-code agent</tspan></text>
+            <rect class="node white-node" x="645" y="282" width="245" height="86"></rect>
+            <text class="dark-text" x="768" y="316"><tspan>Coded Agents</tspan><tspan x="768" dy="22">Engineer-led agent</tspan></text>
+            <rect class="node dark-node" x="985" y="170" width="165" height="90"></rect>
+            <text x="1068" y="204"><tspan>Maestro</tspan><tspan x="1068" dy="22">Coordinate work</tspan></text>
           </g>
         </svg>
         <p class="diagram-caption">If work spans multiple actors over time, use Maestro as the coordination layer.</p>
@@ -317,22 +317,31 @@
               <li>Developer standards after launch.</li>
             </ul>
           </article>
-          <svg class="mini-flow" viewBox="0 0 560 260" role="img" aria-label="Coded agent build flow">
+          <svg class="mini-flow coded-agent-flow" viewBox="0 0 560 260" role="img" aria-label="Coded agent build flow">
             <defs>
-              <marker id="arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                <path d="M 0 0 L 10 5 L 0 10 z"></path>
+              <marker id="arrow-dark" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto">
+                <path class="marker-head" d="M 1 1 L 11 6 L 1 11 Z"></path>
               </marker>
             </defs>
-            <path d="M115 72 H210 V130 H300"></path>
-            <path d="M405 130 H485"></path>
-            <rect class="orange-node" x="20" y="38" width="95" height="68"></rect>
-            <text x="67" y="68"><tspan>Prompt or</tspan><tspan x="67" dy="18">workflow</tspan></text>
-            <rect class="teal-node" x="300" y="98" width="105" height="68"></rect>
-            <text x="352" y="128"><tspan>Package</tspan><tspan x="352" dy="18">agent</tspan></text>
-            <rect class="blue-node" x="210" y="98" width="90" height="68"></rect>
-            <text x="255" y="128"><tspan>Agent</tspan><tspan x="255" dy="18">method</tspan></text>
-            <rect class="purple-node" x="485" y="98" width="55" height="68"></rect>
-            <text x="512" y="128"><tspan>Run</tspan><tspan x="512" dy="18">traces</tspan></text>
+            <g class="links">
+              <path d="M108 92 H128"></path>
+              <path d="M220 92 H240"></path>
+              <path d="M332 92 H352"></path>
+              <path d="M444 92 H464"></path>
+              <path class="secondary-link" d="M286 132 V180 H398 V132"></path>
+            </g>
+            <rect class="orange-node" x="16" y="52" width="92" height="80"></rect>
+            <text x="62" y="84"><tspan>Repo</tspan><tspan x="62" dy="19">+ code</tspan></text>
+            <rect class="blue-node" x="128" y="52" width="92" height="80"></rect>
+            <text x="174" y="84"><tspan>Agent</tspan><tspan x="174" dy="19">logic</tspan></text>
+            <rect class="teal-node" x="240" y="52" width="92" height="80"></rect>
+            <text x="286" y="84"><tspan>Tools</tspan><tspan x="286" dy="19">+ SDKs</tspan></text>
+            <rect class="purple-node" x="352" y="52" width="92" height="80"></rect>
+            <text x="398" y="84"><tspan>Tests</tspan><tspan x="398" dy="19">+ evals</tspan></text>
+            <rect class="dark-node" x="464" y="52" width="80" height="80"></rect>
+            <text x="504" y="80"><tspan>Pkg</tspan><tspan x="504" dy="18">+</tspan><tspan x="504" dy="18">traces</tspan></text>
+            <rect class="white-node" x="178" y="174" width="276" height="54"></rect>
+            <text class="dark-text" x="316" y="202"><tspan>CI/CD, reviews, versions, rollback</tspan></text>
           </svg>
         </div>
         <p class="bottom-note">Good coded agents feel like software projects that happen to run inside the automation platform.</p>
@@ -343,35 +352,41 @@
         </nav>
       </section>
 
-      <section id="slide-11" class="slide dark collage" data-title="Maestro">
+      <section id="slide-11" class="slide dark collage orchestration-slide" data-title="Maestro">
         <img class="brand brand-dark" src="assets/uipath-community-white.png" alt="UiPath Community">
         <div class="title-block wide">
           <p class="pill">Orchestration layer</p>
           <h2>Build Path 4:<br>Maestro</h2>
           <p>Use Maestro when the work is an outcome across people, robots, agents, systems, and time.</p>
         </div>
-        <svg class="orchestration-map" viewBox="0 0 610 360" role="img" aria-label="Maestro orchestration map">
+        <svg class="orchestration-map" viewBox="0 0 640 360" role="img" aria-label="Maestro orchestration map">
           <defs>
-            <marker id="arrow-light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            <marker id="arrow-light" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto">
+              <path class="marker-head" d="M 1 1 L 11 6 L 1 11 Z"></path>
             </marker>
           </defs>
-          <path d="M230 80 H310 V260 H230"></path>
-          <path d="M310 80 H420"></path>
-          <path d="M310 170 H420"></path>
-          <path d="M310 260 H420"></path>
-          <rect class="orange-node" x="40" y="48" width="190" height="64"></rect>
-          <text x="135" y="86">People</text>
-          <rect class="purple-node" x="40" y="138" width="190" height="64"></rect>
-          <text x="135" y="176">Agents</text>
-          <rect class="red-node" x="40" y="228" width="190" height="64"></rect>
-          <text x="135" y="266">Business rules</text>
-          <rect class="teal-node" x="420" y="48" width="150" height="64"></rect>
-          <text x="495" y="86">Robots</text>
-          <rect class="blue-node" x="420" y="138" width="150" height="64"></rect>
-          <text x="495" y="176">Systems</text>
-          <rect class="white-node" x="410" y="244" width="170" height="76"></rect>
-          <text class="dark-text" x="495" y="276"><tspan>Outcome</tspan><tspan x="495" dy="20">instance</tspan></text>
+          <g class="links">
+            <path d="M200 70 H260 Q290 70 290 120"></path>
+            <path d="M200 170 H260"></path>
+            <path d="M200 270 H260 Q290 270 290 220"></path>
+            <path d="M380 120 Q405 70 440 70"></path>
+            <path d="M380 170 H440"></path>
+            <path d="M380 220 Q405 270 440 270"></path>
+          </g>
+          <rect class="orange-node" x="28" y="38" width="172" height="64"></rect>
+          <text x="114" y="76">People</text>
+          <rect class="purple-node" x="28" y="138" width="172" height="64"></rect>
+          <text x="114" y="176">Agents</text>
+          <rect class="red-node" x="28" y="238" width="172" height="64"></rect>
+          <text x="114" y="276">Business rules</text>
+          <rect class="white-node" x="260" y="112" width="120" height="116"></rect>
+          <text class="dark-text" x="320" y="158"><tspan>Maestro</tspan><tspan x="320" dy="22">process</tspan><tspan x="320" dy="22">instance</tspan></text>
+          <rect class="teal-node" x="440" y="38" width="160" height="64"></rect>
+          <text x="520" y="76">Robots</text>
+          <rect class="blue-node" x="440" y="138" width="160" height="64"></rect>
+          <text x="520" y="176">Systems</text>
+          <rect class="white-node" x="440" y="238" width="160" height="74"></rect>
+          <text class="dark-text" x="520" y="268"><tspan>Outcome</tspan><tspan x="520" dy="20">state + SLA</tspan></text>
         </svg>
         <p class="hero-statement">Model the process. Run the instance. Monitor the outcome.</p>
         <nav class="slide-local-nav" aria-label="Slide navigation">
@@ -387,32 +402,38 @@
           <h2>Reference Architecture</h2>
           <p>A clean pattern for connecting agents, robots, humans, and orchestration.</p>
         </div>
-        <svg class="diagram architecture" viewBox="0 0 1180 430" role="img" aria-label="Reference architecture">
+        <svg class="diagram architecture flow-diagram" viewBox="0 0 1180 430" role="img" aria-label="Reference architecture">
           <defs>
-            <marker id="arrow-arch" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            <marker id="arrow-arch" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+              <path class="marker-head" d="M 1 1 L 11 6 L 1 11 Z"></path>
             </marker>
           </defs>
           <g class="arch-links">
-            <path d="M185 130 H280"></path>
-            <path d="M450 130 H540"></path>
-            <path d="M710 130 H800"></path>
-            <path d="M890 130 V245 H955"></path>
-            <path d="M625 170 V285 H535"></path>
-            <path d="M710 285 H955 V245"></path>
+            <path d="M178 150 H238"></path>
+            <path d="M408 150 H468"></path>
+            <path d="M638 150 H698"></path>
+            <path d="M868 150 H930"></path>
+            <path d="M553 190 V282"></path>
+            <path d="M638 322 H783 V190"></path>
+            <path d="M783 190 V282"></path>
+            <path d="M868 322 H1018 V190"></path>
           </g>
-          <rect class="white-node" x="35" y="88" width="150" height="84"></rect>
-          <text class="dark-text" x="110" y="121"><tspan>Request</tspan><tspan x="110" dy="20">email, form, API</tspan></text>
-          <rect class="orange-node" x="280" y="82" width="170" height="96"></rect>
-          <text x="365" y="119"><tspan>Intake agent</tspan><tspan x="365" dy="22">classify and reason</tspan></text>
-          <rect class="dark-node" x="540" y="82" width="170" height="96"></rect>
-          <text x="625" y="119"><tspan>Decision service</tspan><tspan x="625" dy="22">rules and policy</tspan></text>
-          <rect class="blue-node" x="800" y="82" width="170" height="96"></rect>
-          <text x="885" y="119"><tspan>Robot or workflow</tspan><tspan x="885" dy="22">execute systems</tspan></text>
-          <rect class="purple-node" x="450" y="245" width="170" height="86"></rect>
-          <text x="535" y="279"><tspan>Human review</tspan><tspan x="535" dy="22">exceptions</tspan></text>
-          <rect class="white-node" x="955" y="205" width="180" height="86"></rect>
-          <text class="dark-text" x="1045" y="239"><tspan>Maestro</tspan><tspan x="1045" dy="22">state and SLAs</tspan></text>
+          <rect class="white-node" x="35" y="106" width="143" height="88"></rect>
+          <text class="dark-text" x="106" y="132"><tspan>Request</tspan><tspan x="106" dy="20">email, form</tspan><tspan x="106" dy="20">or API</tspan></text>
+          <rect class="orange-node" x="238" y="100" width="170" height="100"></rect>
+          <text x="323" y="136"><tspan>Intake agent</tspan><tspan x="323" dy="22">classify + enrich</tspan></text>
+          <rect class="dark-node" x="468" y="100" width="170" height="100"></rect>
+          <text x="553" y="136"><tspan>Guardrails</tspan><tspan x="553" dy="22">rules + policy</tspan></text>
+          <rect class="purple-node" x="698" y="100" width="170" height="100"></rect>
+          <text x="783" y="136"><tspan>Maestro</tspan><tspan x="783" dy="22">state + SLA</tspan></text>
+          <rect class="blue-node" x="930" y="100" width="190" height="100"></rect>
+          <text x="1025" y="136"><tspan>Execute</tspan><tspan x="1025" dy="22">robots + systems</tspan></text>
+          <rect class="white-node" x="468" y="282" width="170" height="82"></rect>
+          <text class="dark-text" x="553" y="314"><tspan>Human review</tspan><tspan x="553" dy="20">exceptions</tspan></text>
+          <rect class="dark-node" x="698" y="282" width="170" height="82"></rect>
+          <text x="783" y="314"><tspan>Robot queue</tspan><tspan x="783" dy="20">deterministic work</tspan></text>
+          <rect class="white-node" x="930" y="282" width="190" height="82"></rect>
+          <text class="dark-text" x="1025" y="314"><tspan>Audit trail</tspan><tspan x="1025" dy="20">trace + evidence</tspan></text>
         </svg>
         <p class="diagram-caption strong">Trace every action. Bound every tool. Keep humans where judgment, policy, or customer impact demands it.</p>
         <nav class="slide-local-nav" aria-label="Slide navigation">
@@ -495,28 +516,32 @@
           <h2>Demo 2: Agent Builder Pattern</h2>
           <p>Helpdesk triage agent that reasons, calls bounded tools, and escalates safely.</p>
         </div>
-        <svg class="diagram agent-flow" viewBox="0 0 1120 390" role="img" aria-label="Agent Builder demo flow">
+        <svg class="diagram agent-flow flow-diagram" viewBox="0 0 1120 390" role="img" aria-label="Agent Builder demo flow">
           <defs>
-            <marker id="arrow-agent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z"></path>
+            <marker id="arrow-agent" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto">
+              <path class="marker-head" d="M 1 1 L 11 6 L 1 11 Z"></path>
             </marker>
           </defs>
-          <path d="M220 115 H330"></path>
-          <path d="M500 115 H610"></path>
-          <path d="M780 115 H890"></path>
-          <path d="M415 155 V250 H610"></path>
-          <path d="M695 250 H975 V155"></path>
-          <path d="M695 250 V190 H890"></path>
+          <g class="links">
+            <path d="M220 115 H270"></path>
+            <path d="M450 115 H500"></path>
+            <path d="M670 115 H720"></path>
+            <path d="M890 115 H925"></path>
+            <path d="M585 155 V238"></path>
+            <path d="M720 280 H1005 Q1030 280 1030 155"></path>
+          </g>
           <rect class="white-node" x="50" y="75" width="170" height="80"></rect>
-          <text class="dark-text" x="135" y="120">Read request</text>
-          <rect class="orange-node" x="330" y="75" width="170" height="80"></rect>
-          <text x="415" y="120">Classify intent</text>
-          <rect class="blue-node" x="610" y="75" width="170" height="80"></rect>
-          <text x="695" y="120">Select tool</text>
-          <rect class="purple-node" x="890" y="75" width="170" height="80"></rect>
-          <text x="975" y="120">Draft action</text>
-          <rect class="dark-node" x="560" y="250" width="190" height="80"></rect>
-          <text x="655" y="296">Escalate if needed</text>
+          <text class="dark-text" x="135" y="112"><tspan>Read</tspan><tspan x="135" dy="20">request</tspan></text>
+          <rect class="orange-node" x="270" y="75" width="180" height="80"></rect>
+          <text x="360" y="112"><tspan>Reason</tspan><tspan x="360" dy="20">+ classify</tspan></text>
+          <rect class="blue-node" x="500" y="75" width="170" height="80"></rect>
+          <text x="585" y="112"><tspan>Policy</tspan><tspan x="585" dy="20">gate</tspan></text>
+          <rect class="white-node" x="720" y="75" width="170" height="80"></rect>
+          <text class="dark-text" x="805" y="112"><tspan>Approved</tspan><tspan x="805" dy="20">tool call</tspan></text>
+          <rect class="purple-node" x="925" y="75" width="160" height="80"></rect>
+          <text x="1005" y="112"><tspan>Draft</tspan><tspan x="1005" dy="20">action</tspan></text>
+          <rect class="dark-node" x="450" y="238" width="270" height="84"></rect>
+          <text x="585" y="274"><tspan>Human review</tspan><tspan x="585" dy="22">low confidence or risk</tspan></text>
         </svg>
         <p class="diagram-caption strong">Call out approved tools, knowledge boundaries, confidence threshold, escalation message, and evaluation set.</p>
         <nav class="slide-local-nav" aria-label="Slide navigation">
