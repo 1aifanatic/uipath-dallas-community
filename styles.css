@@ -15,6 +15,9 @@
   --stage-w: 1280px;
   --stage-h: 720px;
   --shadow: 0 22px 70px rgba(0, 11, 35, 0.22);
+  --card-shadow: 0 16px 38px rgba(0, 11, 35, 0.08);
+  --card-shadow-strong: 0 20px 48px rgba(0, 11, 35, 0.18);
+  --card-border: #dce6ed;
 }
 
 * {
@@ -34,13 +37,6 @@ body {
   display: grid;
   place-items: center;
   padding: 26px 26px 76px;
-  overflow: hidden;
-}
-
-.logo-sprite {
-  position: absolute;
-  width: 0;
-  height: 0;
   overflow: hidden;
 }
 
@@ -72,7 +68,7 @@ button {
 }
 
 .slide.light {
-  background: var(--white);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
 }
 
 .slide.dark {
@@ -125,14 +121,11 @@ button {
   width: 310px;
   height: auto;
   z-index: 5;
-  border-radius: 4px;
-}
-
-.brand-logo {
   display: block;
   aspect-ratio: 676 / 180;
-  overflow: visible;
-  filter: drop-shadow(0 10px 22px rgba(0, 11, 35, 0.16));
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 12px 28px rgba(0, 11, 35, 0.16);
 }
 
 .brand-dark {
@@ -178,6 +171,7 @@ button {
   font-size: 42px;
   line-height: 1.05;
   font-weight: 800;
+  text-wrap: balance;
 }
 
 .title-block p {
@@ -257,6 +251,7 @@ button {
   font-size: 62px;
   line-height: 0.98;
   font-weight: 900;
+  text-wrap: balance;
 }
 
 .lede {
@@ -296,6 +291,7 @@ button {
   height: 220px;
   object-fit: cover;
   border-radius: 12px;
+  box-shadow: var(--card-shadow-strong);
 }
 
 .info-stack {
@@ -314,9 +310,10 @@ button {
 .two-panel article,
 .clinic-grid article,
 .resource-layout article {
-  border: 1px solid var(--line);
-  background: var(--soft);
+  border: 1px solid var(--card-border);
+  background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%);
   border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .info-card {
@@ -354,6 +351,7 @@ button {
   background: var(--charcoal);
   color: var(--white);
   border-color: var(--charcoal);
+  box-shadow: var(--card-shadow-strong);
 }
 
 .dark-card p,
@@ -386,9 +384,10 @@ button {
   gap: 20px;
   align-items: center;
   padding: 18px 20px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--card-border);
   border-radius: 8px;
-  background: var(--white);
+  background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+  box-shadow: var(--card-shadow);
 }
 
 .host img {
@@ -425,9 +424,11 @@ button {
   column-gap: 18px;
   min-height: 86px;
   padding: 14px 18px;
+  border: 1px solid var(--card-border);
   border-left: 5px solid var(--orange);
   background: var(--soft);
   border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .agenda b {
@@ -480,6 +481,8 @@ button {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
 }
 
 .signal-grid span,
@@ -504,6 +507,7 @@ button {
   bottom: 90px;
   width: calc(100% - 104px);
   height: 430px;
+  overflow: visible;
 }
 
 .diagram text,
@@ -515,6 +519,7 @@ button {
   font-weight: 800;
   text-anchor: middle;
   dominant-baseline: middle;
+  text-rendering: geometricPrecision;
 }
 
 .diagram .dark-text,
@@ -539,7 +544,7 @@ button {
 .mini-flow .links path,
 .orchestration-map .links path {
   opacity: 0.96;
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.22));
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.24));
 }
 
 .diagram marker .marker-head,
@@ -554,10 +559,18 @@ button {
 .agent-flow,
 .orchestration-map {
   color: var(--white);
+  overflow: visible;
 }
 
 .mini-flow {
   color: #404b52;
+  overflow: visible;
+}
+
+.flow-diagram rect,
+.mini-flow rect,
+.orchestration-map rect {
+  filter: drop-shadow(0 10px 16px rgba(0, 11, 35, 0.18));
 }
 
 .architecture path {
@@ -640,8 +653,14 @@ button {
 .matrix {
   width: calc(100% - 104px);
   margin: 34px 52px 0 0;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--card-shadow);
   font-size: 15px;
 }
 
@@ -649,6 +668,7 @@ button {
   background: var(--charcoal);
   color: var(--white);
   padding: 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
   text-align: left;
 }
 
@@ -658,10 +678,20 @@ button {
 
 .matrix td {
   padding: 18px 14px;
-  border: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   vertical-align: top;
   color: #333;
   line-height: 1.35;
+}
+
+.matrix th:last-child,
+.matrix td:last-child {
+  border-right: 0;
+}
+
+.matrix tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .matrix tr:nth-child(even) td {
@@ -684,6 +714,7 @@ button {
   border-radius: 8px;
   background: var(--teal);
   color: var(--white);
+  box-shadow: 0 16px 34px rgba(0, 11, 35, 0.16);
 }
 
 .process-strip article:nth-child(odd) {
@@ -786,6 +817,7 @@ button {
   background: var(--white);
   color: var(--ink);
   border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .steps-grid article:nth-child(even) {
@@ -952,6 +984,7 @@ button {
   background: var(--orange);
   color: var(--white);
   border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(0, 11, 35, 0.16);
   text-align: center;
   font-size: 16px;
   font-weight: 800;
@@ -1010,8 +1043,11 @@ button {
   display: grid;
   grid-template-columns: 170px 1fr;
   min-height: 74px;
-  border: 1px solid var(--line);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
   background: var(--soft);
+  box-shadow: var(--card-shadow);
 }
 
 .role-stack b,
@@ -1045,6 +1081,7 @@ button {
   background: var(--white);
   color: var(--ink);
   border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .readiness-grid article:last-child {
@@ -1086,6 +1123,8 @@ button {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
 }
 
 .governance-grid h3 {
@@ -1154,6 +1193,8 @@ button {
   padding: 0 36px;
   background: var(--white);
   color: var(--ink);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
   font-size: 20px;
   font-weight: 800;
 }
@@ -1790,10 +1831,16 @@ body.landscape .qna-footer {
   background: var(--charcoal);
   color: var(--white);
   text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
 .local-button.primary {
   background: var(--orange);
+}
+
+.local-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 11, 35, 0.18);
 }
 
 .local-button[aria-disabled="true"] {
